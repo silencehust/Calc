@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="简易加法计算器" Height="350" Width="525">
     <Grid>
-        
+        <TextBox x:Name="num1" HorizontalAlignment="Left" Height="45" TextWrapping="Wrap"  VerticalAlignment="Top" FontSize="35" Width="359" Margin="90,0,0,0"  TextChanged="num1_TextChanged"/>
+        <TextBox x:Name="num2" HorizontalAlignment="Left" Height="45" Margin="90,45,0,0" TextWrapping="Wrap"  FontSize="35" VerticalAlignment="Top" Width="359" TextChanged="num2_TextChanged"/>
+        <TextBox x:Name="clacresult" HorizontalAlignment="Left" Height="45" Margin="90,88,0,0" TextWrapping="Wrap" FontSize="35" VerticalAlignment="Top" Width="427"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="加数：" FontSize="20" VerticalAlignment="Top" Height="45" Width="78" Margin="30,10,0,0"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="11,55,0,0" TextWrapping="Wrap" FontSize="20" Text="被加数：" VerticalAlignment="Top" Height="44" Width="85"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="30,95,0,0" TextWrapping="Wrap" FontSize="20" Text="结果：" VerticalAlignment="Top" Height="44" Width="78"/>
+        <TextBlock x:Name="num1result" HorizontalAlignment="Left" Margin="449,1,0,0" TextWrapping="Wrap"  FontSize="20"  VerticalAlignment="Top" Height="44" Width="68" Foreground="#FFF90707"/>
+        <TextBlock x:Name="num2result" HorizontalAlignment="Left" Margin="449,46,0,0" TextWrapping="Wrap"  FontSize="20" VerticalAlignment="Top" Height="42" Width="68" Foreground="#FFF90707"/>
     </Grid>
 </Window>
